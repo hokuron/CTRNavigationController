@@ -1,0 +1,327 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA5297FF16B1061A0061CBD4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5297FE16B1061A0061CBD4 /* QuartzCore.framework */; };
+		AA52985116B10C340061CBD4 /* CTRNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA52985016B10C340061CBD4 /* CTRNavigationController.m */; };
+		AA703D7D16B104DA00C5FBEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA703D7C16B104DA00C5FBEC /* UIKit.framework */; };
+		AA703D7F16B104DA00C5FBEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA703D7E16B104DA00C5FBEC /* Foundation.framework */; };
+		AA703D8116B104DA00C5FBEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA703D8016B104DA00C5FBEC /* CoreGraphics.framework */; };
+		AA703D8716B104DA00C5FBEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA703D8516B104DA00C5FBEC /* InfoPlist.strings */; };
+		AA703D8916B104DA00C5FBEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA703D8816B104DA00C5FBEC /* main.m */; };
+		AA703D8D16B104DA00C5FBEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA703D8C16B104DA00C5FBEC /* AppDelegate.m */; };
+		AA703D8F16B104DA00C5FBEC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AA703D8E16B104DA00C5FBEC /* Default.png */; };
+		AA703D9116B104DA00C5FBEC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA703D9016B104DA00C5FBEC /* Default@2x.png */; };
+		AA703D9316B104DA00C5FBEC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA703D9216B104DA00C5FBEC /* Default-568h@2x.png */; };
+		AA703D9616B104DA00C5FBEC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA703D9416B104DA00C5FBEC /* MainStoryboard.storyboard */; };
+		AA703D9916B104DA00C5FBEC /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA703D9816B104DA00C5FBEC /* MasterViewController.m */; };
+		AA703D9C16B104DA00C5FBEC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA703D9B16B104DA00C5FBEC /* DetailViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA5297FE16B1061A0061CBD4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AA52984F16B10C340061CBD4 /* CTRNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTRNavigationController.h; sourceTree = "<group>"; };
+		AA52985016B10C340061CBD4 /* CTRNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTRNavigationController.m; sourceTree = "<group>"; };
+		AA703D7816B104DA00C5FBEC /* CTRNavigationControllerExampleWithStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CTRNavigationControllerExampleWithStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA703D7C16B104DA00C5FBEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AA703D7E16B104DA00C5FBEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA703D8016B104DA00C5FBEC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AA703D8416B104DA00C5FBEC /* CTRNavigationControllerExampleWithStoryboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CTRNavigationControllerExampleWithStoryboard-Info.plist"; sourceTree = "<group>"; };
+		AA703D8616B104DA00C5FBEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA703D8816B104DA00C5FBEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA703D8A16B104DA00C5FBEC /* CTRNavigationControllerExampleWithStoryboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTRNavigationControllerExampleWithStoryboard-Prefix.pch"; sourceTree = "<group>"; };
+		AA703D8B16B104DA00C5FBEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA703D8C16B104DA00C5FBEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA703D8E16B104DA00C5FBEC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AA703D9016B104DA00C5FBEC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AA703D9216B104DA00C5FBEC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AA703D9516B104DA00C5FBEC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		AA703D9716B104DA00C5FBEC /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		AA703D9816B104DA00C5FBEC /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		AA703D9A16B104DA00C5FBEC /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		AA703D9B16B104DA00C5FBEC /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA703D7516B104DA00C5FBEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA5297FF16B1061A0061CBD4 /* QuartzCore.framework in Frameworks */,
+				AA703D7D16B104DA00C5FBEC /* UIKit.framework in Frameworks */,
+				AA703D7F16B104DA00C5FBEC /* Foundation.framework in Frameworks */,
+				AA703D8116B104DA00C5FBEC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA52984E16B10C340061CBD4 /* CTRNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				AA52984F16B10C340061CBD4 /* CTRNavigationController.h */,
+				AA52985016B10C340061CBD4 /* CTRNavigationController.m */,
+			);
+			name = CTRNavigationController;
+			path = ../../CTRNavigationController;
+			sourceTree = "<group>";
+		};
+		AA703D6D16B104DA00C5FBEC = {
+			isa = PBXGroup;
+			children = (
+				AA5297FE16B1061A0061CBD4 /* QuartzCore.framework */,
+				AA703D8216B104DA00C5FBEC /* CTRNavigationControllerExampleWithStoryboard */,
+				AA703D7B16B104DA00C5FBEC /* Frameworks */,
+				AA703D7916B104DA00C5FBEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA703D7916B104DA00C5FBEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA703D7816B104DA00C5FBEC /* CTRNavigationControllerExampleWithStoryboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA703D7B16B104DA00C5FBEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA703D7C16B104DA00C5FBEC /* UIKit.framework */,
+				AA703D7E16B104DA00C5FBEC /* Foundation.framework */,
+				AA703D8016B104DA00C5FBEC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA703D8216B104DA00C5FBEC /* CTRNavigationControllerExampleWithStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				AA52984E16B10C340061CBD4 /* CTRNavigationController */,
+				AA703D8B16B104DA00C5FBEC /* AppDelegate.h */,
+				AA703D8C16B104DA00C5FBEC /* AppDelegate.m */,
+				AA703D9416B104DA00C5FBEC /* MainStoryboard.storyboard */,
+				AA703D9716B104DA00C5FBEC /* MasterViewController.h */,
+				AA703D9816B104DA00C5FBEC /* MasterViewController.m */,
+				AA703D9A16B104DA00C5FBEC /* DetailViewController.h */,
+				AA703D9B16B104DA00C5FBEC /* DetailViewController.m */,
+				AA703D8316B104DA00C5FBEC /* Supporting Files */,
+			);
+			path = CTRNavigationControllerExampleWithStoryboard;
+			sourceTree = "<group>";
+		};
+		AA703D8316B104DA00C5FBEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA703D8416B104DA00C5FBEC /* CTRNavigationControllerExampleWithStoryboard-Info.plist */,
+				AA703D8516B104DA00C5FBEC /* InfoPlist.strings */,
+				AA703D8816B104DA00C5FBEC /* main.m */,
+				AA703D8A16B104DA00C5FBEC /* CTRNavigationControllerExampleWithStoryboard-Prefix.pch */,
+				AA703D8E16B104DA00C5FBEC /* Default.png */,
+				AA703D9016B104DA00C5FBEC /* Default@2x.png */,
+				AA703D9216B104DA00C5FBEC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA703D7716B104DA00C5FBEC /* CTRNavigationControllerExampleWithStoryboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA703D9F16B104DA00C5FBEC /* Build configuration list for PBXNativeTarget "CTRNavigationControllerExampleWithStoryboard" */;
+			buildPhases = (
+				AA703D7416B104DA00C5FBEC /* Sources */,
+				AA703D7516B104DA00C5FBEC /* Frameworks */,
+				AA703D7616B104DA00C5FBEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CTRNavigationControllerExampleWithStoryboard;
+			productName = CTRNavigationControllerExampleWithStoryboard;
+			productReference = AA703D7816B104DA00C5FBEC /* CTRNavigationControllerExampleWithStoryboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA703D6F16B104DA00C5FBEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Takuma Shimizu";
+			};
+			buildConfigurationList = AA703D7216B104DA00C5FBEC /* Build configuration list for PBXProject "CTRNavigationControllerExampleWithStoryboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA703D6D16B104DA00C5FBEC;
+			productRefGroup = AA703D7916B104DA00C5FBEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA703D7716B104DA00C5FBEC /* CTRNavigationControllerExampleWithStoryboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA703D7616B104DA00C5FBEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA703D8716B104DA00C5FBEC /* InfoPlist.strings in Resources */,
+				AA703D8F16B104DA00C5FBEC /* Default.png in Resources */,
+				AA703D9116B104DA00C5FBEC /* Default@2x.png in Resources */,
+				AA703D9316B104DA00C5FBEC /* Default-568h@2x.png in Resources */,
+				AA703D9616B104DA00C5FBEC /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA703D7416B104DA00C5FBEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA703D8916B104DA00C5FBEC /* main.m in Sources */,
+				AA703D8D16B104DA00C5FBEC /* AppDelegate.m in Sources */,
+				AA703D9916B104DA00C5FBEC /* MasterViewController.m in Sources */,
+				AA703D9C16B104DA00C5FBEC /* DetailViewController.m in Sources */,
+				AA52985116B10C340061CBD4 /* CTRNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA703D8516B104DA00C5FBEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA703D8616B104DA00C5FBEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AA703D9416B104DA00C5FBEC /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA703D9516B104DA00C5FBEC /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA703D9D16B104DA00C5FBEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA703D9E16B104DA00C5FBEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA703DA016B104DA00C5FBEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CTRNavigationControllerExampleWithStoryboard/CTRNavigationControllerExampleWithStoryboard-Prefix.pch";
+				INFOPLIST_FILE = "CTRNavigationControllerExampleWithStoryboard/CTRNavigationControllerExampleWithStoryboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AA703DA116B104DA00C5FBEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CTRNavigationControllerExampleWithStoryboard/CTRNavigationControllerExampleWithStoryboard-Prefix.pch";
+				INFOPLIST_FILE = "CTRNavigationControllerExampleWithStoryboard/CTRNavigationControllerExampleWithStoryboard-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA703D7216B104DA00C5FBEC /* Build configuration list for PBXProject "CTRNavigationControllerExampleWithStoryboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA703D9D16B104DA00C5FBEC /* Debug */,
+				AA703D9E16B104DA00C5FBEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA703D9F16B104DA00C5FBEC /* Build configuration list for PBXNativeTarget "CTRNavigationControllerExampleWithStoryboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA703DA016B104DA00C5FBEC /* Debug */,
+				AA703DA116B104DA00C5FBEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA703D6F16B104DA00C5FBEC /* Project object */;
+}
