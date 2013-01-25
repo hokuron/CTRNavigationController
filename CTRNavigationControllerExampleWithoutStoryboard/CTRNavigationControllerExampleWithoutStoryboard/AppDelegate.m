@@ -26,9 +26,9 @@
 
     
     NSDictionary *attrs = @{
-    UITextAttributeFont            : [UIFont fontWithName:@"Thonburi" size:24.0f],
-    UITextAttributeTextColor       : [UIColor colorWithWhite:0.122 alpha:1.000],
-    UITextAttributeTextShadowColor : [UIColor clearColor],
+        UITextAttributeFont            : [UIFont fontWithName:@"Thonburi" size:24.0f],
+        UITextAttributeTextColor       : [UIColor colorWithWhite:0.122 alpha:1.000],
+        UITextAttributeTextShadowColor : [UIColor clearColor],
 	};
     
 	[[UINavigationBar appearance] setTitleTextAttributes:attrs];

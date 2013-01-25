@@ -18,17 +18,6 @@
 
 @implementation CTRNavigationController
 
-- (id)initWithRootViewController:(UIViewController *)rootViewController andScrollView:(UIScrollView *)scrollView
-{
-    self = [super initWithRootViewController:rootViewController];
-    
-    if ( ! self) return self;
-    
-    [self layoutShadowWithScrollView:scrollView];
-    
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -40,14 +29,43 @@
     [super didReceiveMemoryWarning];
 }
 
+- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+{
+    [self layoutShadow];
+}
+
+//////////////////////////////////////////////////////////////
+#pragma mark - Public
+//////////////////////////////////////////////////////////////
+
+- (id)initWithRootViewController:(UIViewController *)rootViewController andScrollView:(UIScrollView *)scrollView
+{
+    self = [super initWithRootViewController:rootViewController];
+    
+    if ( ! self) return self;
+    
+    [self layoutShadowWithScrollView:scrollView];
+    
+    return self;
+}
+
 - (void)layoutShadowWithScrollView:(UIScrollView *)scrollView
 {
     scrollView.delegate = self;
     [self layoutShadow];
 }
 
+//////////////////////////////////////////////////////////////
+#pragma mark - Private
+//////////////////////////////////////////////////////////////
+
 - (void)layoutShadow
 {
+    if (_shadowLayer) {
+        [_shadowLayer removeFromSuperlayer];
+        _shadowLayer = nil;
+    }
+    
     UINavigationBar *navBar = self.navigationBar;
     
     CAGradientLayer *gradientLayer, *horizontalOverlay;
@@ -60,29 +78,37 @@
         (id)[UIColor colorWithWhite:0.000 alpha:0.300].CGColor,
         (id)[UIColor colorWithWhite:0.000 alpha:0.150].CGColor,
         (id)[UIColor colorWithWhite:0.000 alpha:0.075].CGColor,
-        (id)[UIColor clearColor].CGColor
+        (id)[UIColor clearColor].CGColor,
     ];
     // Overlay gradient from left to right
     horizontalOverlay.frame  = CGRectMake(0, 0, gradientLayer.bounds.size.width, 4.0f);
     horizontalOverlay.colors = @[
+        (id)[UIColor clearColor].CGColor,
         (id)[UIColor whiteColor].CGColor,
-        (id)[UIColor colorWithWhite:1 alpha:0].CGColor,
-        (id)[UIColor colorWithWhite:1 alpha:0].CGColor,
-        (id)[UIColor whiteColor].CGColor
+        (id)[UIColor whiteColor].CGColor,
+        (id)[UIColor clearColor].CGColor,
     ];
-    horizontalOverlay.locations  = @[@0, @0.25, @0.75, @1.0];
+    horizontalOverlay.locations  = @[@0, @0.20, @0.80, @1.0];
     horizontalOverlay.startPoint = CGPointMake(0, 0.5f);
     horizontalOverlay.endPoint   = CGPointMake(1.0f, 0.5f);
-    
-    [gradientLayer addSublayer:horizontalOverlay];
+
+    gradientLayer.mask = horizontalOverlay;
     
     _shadowLayer = gradientLayer;
     _shadowLayer.opacity = 0;
-    [navBar.layer.superlayer addSublayer:_shadowLayer];
+    [self.view.layer addSublayer:_shadowLayer];
+    NSLog(@"sublayers: %@", navBar.layer.sublayers);
 }
+
+//////////////////////////////////////////////////////////////
+#pragma mark - Scroll view delegate
+//////////////////////////////////////////////////////////////
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
+    if ([self.topViewController respondsToSelector:@selector(scrollViewDidScroll:)]) {
+        [(id)self.topViewController scrollViewDidScroll:scrollView];
+    }
     // if "< 5.0f", assign ABS() value.
     CGFloat offsetY = ABS(scrollView.contentOffset.y) < 5.0f ? : 5.0f;
     _shadowLayer.opacity = 1.0f / 5.0f * offsetY;
